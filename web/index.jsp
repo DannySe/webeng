@@ -8,9 +8,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>Collection</title>
   </head>
   <body>
-  $END$
+  <h1>Exercise Collection</h1>
+  <ul>
+    <li>Hallo du da: <a href="/halloduda">/halloduda</a> or <a href="/halloduda2">/halloduda2</a> </li>
+    [These are 2 instances of the same Servlet. One is mapped with @Webservlet Annotation (/halloduda) and instanciated on a call.
+      The other is mapped with web.xml and instanciated on server startup.]
+  </ul>
   </body>
 </html>
