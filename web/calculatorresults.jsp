@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" errorPage="calculatorerror.jsp" import="java.lang.Math.*" %>
+<%@ page import="static java.lang.Double.valueOf" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
@@ -15,8 +16,8 @@
     </style>
 </head>
 <body>
-<c:set var="var1" value="${param.var1}" />
-<c:set var="var2" value="${param.var2}" />
+<c:set var="var1" value="${param.var1}" scope="application" />
+<c:set var="var2" value="${param.var2}" scope="application"/>
 <h1>Calculator Results: </h1>
 <p>Your math-task "
     <%--Check Variable 1--%>
@@ -54,6 +55,14 @@
         <c:when test="${param.operator == '-'}">
             minus
             <c:set var="result" value="${var1 - var2}"/>
+        </c:when>
+        <c:when test="${param.operator == '^'}">
+            hoch
+            <% Double a = new Double(request.getParameter("var1"));
+            Double b = new Double(request.getParameter("var2"));
+            double res = Math.pow(a,b);
+            %>
+            <c:set var="result"><%= res %></c:set>
         </c:when>
         <c:otherwise>
             <jsp:forward page="calculatorerror.jsp">
