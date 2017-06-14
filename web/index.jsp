@@ -16,6 +16,7 @@
     <li>Hallo du da: <a href="/halloduda">/halloduda</a> or <a href="/halloduda2">/halloduda2</a> </li>
     [These are 2 instances of the same Servlet. One is mapped with @Webservlet Annotation (/halloduda) and instanciated on a call.
       The other is mapped with web.xml and instanciated on server startup.]
+    <li>Fibonacci: <a href="fibonacci.jsp">fibonacci.jsp</a></li>
   </ul>
   </body>
 </html>
