@@ -17,6 +17,7 @@
     [These are 2 instances of the same Servlet. One is mapped with @Webservlet Annotation (/halloduda) and instanciated on a call.
       The other is mapped with web.xml and instanciated on server startup.]
     <li>Fibonacci: <a href="fibonacci.jsp">fibonacci.jsp</a></li>
+    <li>Calculator: <a href="calculator.jsp">Simple jsp-Version</a></li>
   </ul>
   </body>
 </html>
