@@ -16,9 +16,9 @@
     <li>Hallo du da: <a href="/halloduda">/halloduda</a> or <a href="/halloduda2">/halloduda2</a> </li>
     [These are 2 instances of the same Servlet. One is mapped with @Webservlet Annotation (/halloduda) and instanciated on a call.
       The other is mapped with web.xml and instanciated on server startup.]
-    <li>Fibonacci: <a href="fibonacci.jsp">fibonacci.jsp</a></li>
-    <li>Calculator: <a href="calculator.jsp">Simple jsp-Version</a></li>
-    <li>Counter for Scope: <a href="counter/counter.jsp">here</a></li>
+    <li><a href="fibonacci.jsp">Fibonacci numbers</a></li>
+    <li><a href="calculator/formular.jsp">Calculator</a></li>
+    <li><a href="counter/counter.jsp">Counter for Scope</a></li>
   </ul>
   </body>
 </html>
