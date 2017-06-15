@@ -18,6 +18,7 @@
       The other is mapped with web.xml and instanciated on server startup.]
     <li>Fibonacci: <a href="fibonacci.jsp">fibonacci.jsp</a></li>
     <li>Calculator: <a href="calculator.jsp">Simple jsp-Version</a></li>
+    <li>Counter for Scope: <a href="counter.jsp">here</a></li>
   </ul>
   </body>
 </html>
