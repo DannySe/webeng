@@ -20,6 +20,9 @@
 <c:set var="r"> <%= myRequestCounter.getCounter()%></c:set>
 <c:set var="s"> <%= mySessionCounter.getCounter()%></c:set>
 <c:set var="a"> <%= myApplicationCounter.getCounter()%></c:set>
+<% if (request.getParameter("pressed") != null) { %>
+    <jsp:forward page="requestCounter.jsp"/>
+<% } %>
 <h3>Page Scope</h3>
 <c:out value="${p}"/>
 <h3>Request Scope</h3>
@@ -28,5 +31,9 @@
 <c:out value="${s}"/>
 <h3>Application Scope</h3>
 <c:out value="${a}"/>
+<form action="counter.jsp">
+    <input type="submit" name="pressed" value="Forward me"/>
+</form>
+
 </body>
 </html>
