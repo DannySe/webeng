@@ -19,6 +19,6 @@
     <c:out value="${sessionScope.calculator.var2}"/>
 </p>
 <p>My solution is: <c:out value="${sessionScope.calculator.result}"/></p>
-<button onclick="location.href = 'formular.jsp';">Try again</button>
+<button onclick="location.href = 'calculator/formular.jsp';">Try again</button>
 </body>
 </html>

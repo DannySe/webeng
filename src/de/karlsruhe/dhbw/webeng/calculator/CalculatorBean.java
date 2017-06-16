@@ -3,7 +3,7 @@ package de.karlsruhe.dhbw.webeng.calculator;
 /**
  * Created by dannynator on 15.06.17.
  */
-public class calculatorBean {
+public class CalculatorBean {
     String var1;
     String var2;
     String operator;
@@ -12,7 +12,7 @@ public class calculatorBean {
     boolean errorOperator = false;
     boolean errorZeroDivision = false;
 
-    public calculatorBean() {
+    public CalculatorBean() {
     }
 
     public String getVar1() {
