@@ -8,14 +8,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core_1_1" %>
 <jsp:useBean id="calculator" class="de.karlsruhe.dhbw.webeng.calculator.CalculatorBean" scope="session"/>
-<%--<c:if test="${param.isSubmitted != null}">
-    <jsp:setProperty name="calculator" property="var1" param="var1"/>
-    <jsp:setProperty name="calculator" property="var2" param="var2"/>
-    <jsp:setProperty name="calculator" property="operator" param="operator"/>
-    <c:if test="${calculator.OK}">
-        <c:redirect url="/calculator/results.jsp"/>
-    </c:if>
-</c:if>--%>
 <html>
 <head>
     <title>Calculator</title>
