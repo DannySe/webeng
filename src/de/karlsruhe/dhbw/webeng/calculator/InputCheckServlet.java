@@ -29,7 +29,11 @@ public class InputCheckServlet extends HttpServlet{
         calculatorBean.setVar2(req.getParameter("var2"));
         calculatorBean.setOperator(req.getParameter("operator"));
         if (calculatorBean.getOK()) {
-            requestDispatcher = req.getRequestDispatcher("calculator/results.jsp");
+            if (calculatorBean.getResult()==42.0) {
+                requestDispatcher = req.getRequestDispatcher("calculator/easterEgg.jsp");
+            } else {
+                requestDispatcher = req.getRequestDispatcher("calculator/results.jsp");
+            }
         } else {
             requestDispatcher = req.getRequestDispatcher("calculator/formular.jsp");
         }
