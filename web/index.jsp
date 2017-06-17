@@ -19,6 +19,7 @@
     <li><a href="fibonacci.jsp">Fibonacci numbers</a></li>
     <li><a href="calculator/formular.jsp">Calculator</a></li>
     <li><a href="counter/counter.jsp">Counter for Scope</a></li>
+    <li><a href="formular.jsp">Address-Form</a></li>
   </ul>
   </body>
 </html>
