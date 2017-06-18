@@ -8,7 +8,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <jsp:useBean id="addressList" class="de.karlsruhe.dhbw.webeng.addressbook.AddressList" scope="session"/>
-<jsp:useBean id="addressBean" class="de.karlsruhe.dhbw.webeng.addressbook.Address" scope="session"/>
 <c:set var="searchParam" scope="session" value="${param.search}"/>
 <jsp:setProperty name="addressList" property="searchString" param="search"/>
 <c:set var="resultList" value="${addressList.addressList}"/>
@@ -41,7 +40,7 @@
                     <td>${address.christianname}</td>
                     <td>${address.name}</td>
                     <td>${address.email}</td>
-                    <td><button>Details</button></td>
+                    <td><input type="button" onclick="location.href='addressDetail.jsp?id=${address.id}';" value="Details"/></td>
                     <td><button>Delete</button></td>
                 </tr>
             </c:forEach>
