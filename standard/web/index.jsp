@@ -21,6 +21,7 @@
     <li><a href="counter/counter.jsp">Counter for Scope</a></li>
     <li><a href="address-sticker/formular.jsp">Address-Form</a></li>
     <li><a href="table-game/tableGame.jsp">Table Game</a></li>
+    <li><a href="address-book/addressList.jsp">Address Book</a></li>
   </ul>
   </body>
 </html>
