@@ -16,13 +16,13 @@ public class AddressBook {
     private void initializeAddressBook() {
         addressMap = new HashMap<String, Address>();
         addressMap.put("1", new Address("1","Boller", "Stefan", "Herr", "stefan.boller@sap.com", "0815", "017411", "STraße",
-                "1", "Heidelberg", "69126", "Deutschland", "2.3.1972"));
+                "1", "Heidelberg", "69126", "Deutschland", "2/3/1972"));
         addressMap.put("2", new Address("2","Boller", "Sanja", "Frau", "sanja@irgendwas.com", "0815", "017411", "STraße",
-                "1", "Heidelberg", "69126", "Deutschland", "4.9.2001"));
+                "1", "Heidelberg", "69126", "Deutschland", "4/9/2001"));
         addressMap.put("3", new Address("3","Müller", "Hans", "Herr", "hansi@irgendwas.com", "0815", "017411", "STraße",
-                "1", "Heidelberg", "69126", "Deutschland", "4.9.2001"));
+                "1", "Heidelberg", "69126", "Deutschland", "4/9/2001"));
         addressMap.put("4", new Address("4","Bauer", "Berta", "Frau", "bb@irgendwas.com", "0815", "017411", "STraße", "1",
-                "Heidelberg", "69126", "Deutschland", "4.9.2001"));
+                "Heidelberg", "69126", "Deutschland", "4/9/2001"));
     }
 
     public static AddressBook getInstance() {

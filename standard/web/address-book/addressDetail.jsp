@@ -23,7 +23,7 @@
         <h2>Detailed view for Contact "${addressBean.christianname} ${addressBean.name}"</h2>
         <table>
             <tr>
-                <td>Full Name: </td>
+                <td>Full Name </td>
                 <td colspan="3">${addressBean.addressform} ${addressBean.christianname} ${addressBean.name}</td>
             </tr>
             <tr>
@@ -44,12 +44,15 @@
                 <td>Country</td>
                 <td>${addressBean.country}</td>
             </tr>            <tr>
-                <td colspan="2">Birthday</td>
-                <td colspan="2">${addressBean.birthday}</td>
+                <td>Birthday</td>
+                <td colspan="3">${addressBean.birthday}</td>
             </tr>
         </table>
         <br>
-        <input type="button" onclick="location.href='addressList.jsp'" value="Back"> <input type="button" value="Löschen">
+        <input type="button" onclick="location.href='addressForm.jsp?id=${param.id}'" value="Edit">
+        <input type="button" onclick="location.href='addressList.jsp'" value="Back">
+        <!--TODO: add button functionality-->
+        <input type="button" value="Delete">
     </c:when>
     <c:otherwise>
         <h2>No such user!</h2>
